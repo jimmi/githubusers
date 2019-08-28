@@ -1,0 +1,31 @@
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px;
+}
+
+.avatar_child {
+    order: 1;
+    flex: 1;
+}
+
+.details_child {
+    order: 2;
+    flex: 4;
+}
+
+.toolbar_parent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.page_title {
+    flex: 8;
+    order: 2;
+}
+
+.back_button {
+    flex: 1;
+    order: 1;
+}

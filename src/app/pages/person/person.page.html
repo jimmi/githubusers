@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="toolbar_parent">
+            <div clas="back_button">
+                <ion-buttons slot="start">
+                    <ion-back-button (click)="goBack()">
+                    </ion-back-button>
+                </ion-buttons>
+                <!-- <ion-back-button>Back</ion-button> -->
+            </div>
+            <div class="page_title">
+                <h2>person</h2>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <div class="parent">
+            <div class="avatar_child">
+                <ion-avatar>
+                    <img *ngIf="person" src="{{person.avatar_url || ''}}">
+                </ion-avatar>
+            </div>
+            <div class="details_child">
+                <div class="name_child" *ngIf="person">{{person.name}}</div>
+                <div class="location_child" *ngIf="person">{{person.location}}</div>
+            </div>
+        </div>
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Ionic Blank</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-item>Top 5 GitHub Users</ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                Tap the username to see more information
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <a *ngFor="let user of topFive" [routerLink]="['/person/',user]">
+                    <ion-button>{{user}}</ion-button>
+                </a>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
